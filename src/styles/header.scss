@@ -1,0 +1,134 @@
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: $color5;
+    color: $color4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $p;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+        >h2{
+            font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        >a{
+            color: $color4;
+            font-weight: 500;
+            transition: all .5s;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            &:hover{
+                color: $color3;
+            }
+        }
+    }
+    > a > button{
+        border: 1px solid $color6_1;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        color: $color6;
+        font-weight: 500;
+        transition: all .3s;
+        &:hover{
+            color: $color4;
+            background-color: $color6;
+        }
+    }
+}
+.hamburger{
+    cursor: pointer;
+    position: fixed;
+    top: 2.2rem;
+    right: 1rem;
+    z-index: 1001;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    color: $color4;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    display: none;
+    &:hover{
+        color: $color3;
+    }
+}
+
+
+.navPhone{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $color5;
+    padding: $p_base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    transition: all 1s ease;
+    transform: translateX(-200%);
+    >h2{
+        display: flex;
+        text-transform:uppercase;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font: 900 1.6rem $text-1;
+        font-style: italic;
+        color: $color4;
+        letter-spacing: 4px;
+        >svg{
+            font-size: 2.5rem;
+        }
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        >a{
+            text-align: center;
+            color: $color4;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font:500 1.2rem $text-1;
+            transition: all .5s;
+            &:hover{
+                color: $color3;
+            }
+        }
+        
+    }
+    >a>button{
+      border: 1px solid $color6;
+      padding: .5rem 2rem;
+      background-color: $color4;
+      cursor: pointer;
+      color: $color6;
+      letter-spacing: 1px;
+      font:500 1rem $text-1;
+      transition: all .5s;
+      &:hover{
+        background-color: $color6;
+        color: $color4;
+      }
+    }
+}
+
+.phoneNavCome{
+    transform: translateX(0);
+}

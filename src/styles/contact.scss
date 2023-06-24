@@ -1,0 +1,109 @@
+#contact {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  > section {
+    width: 100%;
+    height: 100%;
+    background-color: $color3_light;
+    >form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        > h2 {
+            text-align: center;
+            font: 300 2.7rem $text-2;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin: 2rem;
+            color: $color5;
+          }
+         >input{
+          width: 80%;
+          height: 7vh;
+          margin: .5rem;
+          outline: none;
+          border: none;
+          padding-left: .5em;
+          font:500 .9rem $text-1;
+          background-color: $color4;
+          color: $color5;
+       
+         } 
+         >textarea{
+          resize: none;
+          width: 80%;
+          height:100px;
+          margin: .5rem;
+          padding: .5em;
+          outline: none;
+         white-space: pre-wrap;
+          border: none;
+          font:500 .9rem $text-1;
+          background-color: $color4;
+          overflow: hidden;
+          color: $color5;
+      
+         }
+         >button{
+          width: 80%;
+          font:500 1.2rem $text-1;
+          text-transform: uppercase;
+          margin: .5em;
+          padding: .5em;
+          background-color: $color3;
+          color: $color1;
+          transition: all .5s;
+          border: none;
+          &:hover{
+            cursor: pointer;
+            background-color: $color3_1;
+          }
+         }
+    }
+  }
+>aside{
+  width: 100%;
+  height: 100%;
+  background-color: $color5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  > h2 {
+    width: fit-content;
+    text-align: center;
+    font: 300 2.7rem $text-2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 2rem;
+    color: $color3_1;
+  }
+  >img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    filter: hue-rotate(140deg);
+    animation: sayHello 10s linear  infinite alternate;
+  }
+  >footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    >a{
+      
+      >svg{
+        transition: all .5s;
+        font-size: 2rem;
+        color: $color4;
+        &:hover{
+          color: $color3_1;
+        }
+      }
+    }
+  }
+}
+}

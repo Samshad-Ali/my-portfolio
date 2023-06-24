@@ -1,0 +1,37 @@
+
+
+
+@keyframes ghumar {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes updown {
+    to{
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes sayHello {
+    0%{
+        transform: translateX(-10px);
+    
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+ 
+@keyframes skew {
+    to{
+        transform: translateY(-5px);
+    }
+}

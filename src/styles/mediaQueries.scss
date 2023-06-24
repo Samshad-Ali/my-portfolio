@@ -1,0 +1,463 @@
+@media only screen and (max-width:1367px) {
+
+    nav{
+        padding: 0 $p_md;
+    }
+    #home{
+        height: 100vh;
+        >section{
+            &:first-of-type{
+                padding-left: $p_md;
+                >div aside {
+                    width: 85%;
+                }
+            }
+            &:last-of-type{
+                >div{
+                    width: 30vmax;
+                    height: 30vmax;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 10;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 27vmax;
+                        height: 27vmax;
+                        margin-top: -10px;
+                        background-color:$color3_1;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+                    >img{
+                        width: 95%;
+                        height: 95%;
+                        object-fit: contain;
+                    }
+                  
+                }
+            }
+        }
+    }
+
+    #work{
+        padding: 8rem $p_md;
+        height: 110vh;
+        >section{
+            >article{
+                height: 20rem;
+                width: 90%;
+            }
+            .workItem{
+                padding: 2rem;
+                height: 20rem;
+                >aside{
+                    >p{
+                        margin: 1rem;   
+                    }
+                    >a{
+                        margin: 1rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #skills{
+        padding: $p_md;
+        >section{
+            height: 90%;
+        }
+    }
+
+    #contact{
+        >section>form{
+           >textarea, >input{
+                font: 400 .8rem $text-1;
+                width: 60%;
+            }
+            >button{
+                width: 60%;
+            }
+            >input{
+                height: 6vh;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+
+    nav{
+        padding: 0 $p_base;
+    }
+
+    #home{
+        height: 110vh;
+        >section{
+            &:first-of-type{
+                padding-left: $p_base;
+                >div {
+                    >h1{
+                        font:300 3rem $text-2;
+                        >span{
+                            text-transform: uppercase;
+                            font: 500 3rem $text-1;
+                            color: $color5;
+                        }
+                    }
+                    .typerwriterpara{
+                      
+                        font:700 1.9rem $text-1;
+                      
+                    }
+                }
+            }
+            &:last-of-type{
+                width: 40%;
+                >div{
+                    width: 40vmax;
+                    height: 40vmax;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 10;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 30vmax;
+                        height: 30vmax;
+                        margin-top: -10px;
+                        background-color:$color3_1;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+                    >img{
+                        width: 95%;
+                        height: 95%;
+                        object-fit: contain;
+                    }
+                  
+                }
+            }
+            }
+    }
+
+    #work{
+        padding: 8rem $p_base;
+        >section{
+            height: 28rem;
+            >article{
+                height: 20rem;
+                width: 90%;
+            }
+            .workItem{
+                padding: 2rem;
+                height: 20rem;
+                >aside{
+                    >p{
+                        margin: 1rem;   
+                    }
+                    >a{
+                        margin: 1rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #skills{
+        padding: $p_base_inverse;
+        text-align: center;
+    }
+
+    #contact{
+        >section>form{
+           >textarea, >input{
+                font: 400 .8rem $text-1;
+                width: 50%;
+            }
+            >button{
+                width: 50%;
+            }
+            >input{
+                height: 6vh;
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+
+    nav{
+        padding:0 $p_sm;
+        >h2{
+            font-size: 1.8rem;
+        }
+      
+    }
+    #home{
+        height: 100vh;
+        >section{
+            &:first-of-type{
+                padding-left: $p_sm;
+                >div {
+                    >div{
+                        gap: 2rem;
+                        width: 100%;
+                    }
+                    .typerwriterpara{
+                        font-size: 1.5rem;
+                    }
+                 
+                }
+            }
+        }
+    }
+
+    #work{
+        padding: 8rem $p_zero;
+        // height: 110vh;
+        >section{
+            height: 30rem;
+            >article{
+                height: 20rem;
+                width: 90%;
+            }
+            .workItem{
+                padding: 2rem;
+                height: 20rem;
+               
+            }
+        }
+    }
+
+    #skills{
+        padding: $p_sm_inverse;
+    }
+
+    #contact{
+      
+        >section>form{
+            >h2{
+                font:100 2.1rem $text-2;
+            }
+           >textarea, >input,button{
+                font: 400 .8rem $text-1;
+                width: 65%;
+            }
+            >button{
+                width: 65%;
+            }
+            >input{
+                height: 5vh;
+            }
+
+        }
+        >aside{
+            >h2{
+                font:100 2.1rem $text-2;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:780px) {
+    
+        nav{
+         >div{
+            display: none;
+        }
+        >a>button{
+             display: none;
+
+         }
+        }
+        .hamburger{
+            display:inline;
+        }
+     
+    }
+
+    
+    @media only screen and (max-width:580px) {
+    
+        nav{
+            padding:0 $p_sm;
+            >h2{
+                font-size: 1.8rem;
+            }
+          
+        }
+        #home{
+            width: 100%;
+            height: unset;
+            flex-direction: column-reverse;
+            >section{
+                &:first-of-type{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding-left: $p_sm;
+                    >div {
+                        padding-top: 2rem;
+                        >div{
+                            gap: 2rem;
+                            width: 100%;
+
+                        }
+                     
+                    }
+                }
+                &:last-of-type{
+                    padding-top: 2rem;
+               width: 100%;
+               >div{
+                width: 300px;
+                height:300px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 10px;
+                    background-color:$color3_1;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+
+                img{
+                    width: 300px;
+                    height:300px;
+
+                }
+               }
+                }
+            }
+        }
+    
+        #work{
+            padding: $p_md_sm 0;
+            width: 100%;
+        height: 120vh;
+      
+            >section{
+                  width: 100%;
+                  height: 100%;
+                >article{
+                    width: 100%;
+                    height: 90%;
+                }
+                .workItem{
+                    width: 95%;
+                    height: 90%;
+        box-shadow: inset 1px 1px 10px $color6,inset -1px -1px 10px $color6;
+                    padding: .5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: .5rem;
+                    >img{
+                        width: 90%;
+                        height: 80%;
+                        border-radius: 0;
+                    }
+                    >aside{
+                        width: 100%;
+                        >a{
+                            font:500 1.2rem $text-1;
+                            padding: .5rem 1rem;
+                        }
+                        >h3{
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            margin: 0;
+                        }
+                        >p{
+                            font-size: .9rem;
+                            letter-spacing: 0;
+                            line-height: unset;
+                            margin: 1rem;
+                        }
+                    }
+                }
+            
+        }
+    }
+    
+        #skills{
+            padding: $p_md_sm;
+           >section{
+            margin: 3rem 0;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+            *{
+              
+                &:hover{
+                    box-shadow: 0 0 3px 3px $color1;
+                  }
+            }
+            .skillBox1{
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+        
+            .skillBox4{
+                grid-column: 1/3;
+                grid-row: unset;
+            }
+          
+           }
+        }
+    
+        #contact{
+          grid-template-columns: 1fr;
+          
+          >section{
+            padding: $p_md_sm;
+           > form{
+            >h2{
+                font-size: 1.8rem;
+            }
+              input,button,textarea{
+                width: 90%;
+              }
+           }
+          }
+          >aside{
+            padding: $p_md_sm;
+            >h2{
+                font-size: 1.8rem;
+            }
+            >footer{
+                gap: 1.5rem;
+                margin-top: .5rem;
+            }
+        }
+        }
+    
+    }
+
+
+    
+  
+    

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import 'utility.scss';
+@import 'animations.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'work.scss';
+@import 'timeline.scss';
+@import 'skills.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+@import 'mediaQueries.scss';
+
+
+*{    
+padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $text-2;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $color1;
+    overflow-x: hidden;
+    position: relative;
+    // width: 100%;
+}
+
+.disableBtn{
+    background-color: rgb(237, 237, 237);
+    cursor: not-allowed !important ;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: $color5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $color3_1;
+    border-radius: 10px;
+    border: 1px solid $color4;
+}
